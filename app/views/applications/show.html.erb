@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<% user = @application.user %>
+
+<h2>Bewerber</h2>
+<p>
+  <dl>
+    <dt>User:</dt>
+    <dd><%= link_to "#{user.first_name} #{user.last_name}", @application.user %></dd>
+    <dt>Adresse:</dt>
+    <dd><%= "#{user.street}, #{user.location_code} #{user.city}" %></dd>
+    <dt>Telefon:</dt>
+    <dd><%= "#{user.phone}" %>
+  </dl>
+</p>
+<h2>Bewerbung</h2>
+<p>
+  <dl>
+    <dt>Position:</dt>
+    <dd><%= @application.position %></dd>
+  </dl>
+</p>
+
+<p>
+  <dl>
+    <dt>Text:</dt>
+    <dd><%= @application.text %></dd>
+  </dl>
+</p>
+
+
+<%= link_to 'Back', applications_path %>

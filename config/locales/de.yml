@@ -1,0 +1,27 @@
+de:
+  activerecord: 
+    errors:
+      models:
+        application:
+          attributes:
+            position: 
+              presence: "Bitte geben Sie eine Stellenbeschreibung an"
+            text:
+              presence: "Bitte geben Sie einen Bewerbungstext an"
+            application_count: "Bitte nicht mehr als 3 Bewerbungen pro Bewerber"
+        user:
+          attributes:
+            email:
+              uniqueness: "Sie haben sich bereits fuer einen API-Key angemeldet"
+            city:
+              blank: "Bitte geben Sie eine Stadt ein"
+            last_name:
+              blank: "Bitte geben Sie ihren Nachnamen ein"
+            first_name:
+              blank: "Bitte geben Sie ihren Nachnamen ein"
+            street:
+              blank: "Bitte geben Sie einen Straßennamen und eine Hausnummer ein"
+            location_code:
+              blank: "Bitte geben Sie ihre Postleitzahl ein"
+            foto:
+              blank: "Bitte legen Sie ein Foto bei"
